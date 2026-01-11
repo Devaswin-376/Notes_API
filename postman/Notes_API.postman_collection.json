@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "afd6a13f-4cbc-4d74-811c-85bf6eb9c87b",
+		"name": "Notes API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48253689",
+		"_collection_link": "https://ksdevaswin-9814466.postman.co/workspace/Notes_API-testing~e95ec8f5-bdb6-477a-9a7e-89668f467fa5/collection/48253689-afd6a13f-4cbc-4d74-811c-85bf6eb9c87b?action=share&source=collection_link&creator=48253689"
+	},
+	"item": [
+		{
+			"name": "Create note",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyNyIsImV4cCI6MTc2Nzk0NTA2OH0.WEEC2cfXMIJJAi97W3AvVTu-7gEVr3-ZHw692Aqinbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"My First Note\",\r\n  \"content\": \"Hello versioning!\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/notes",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Note",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyNyIsImV4cCI6MTc2Nzk0NTA2OH0.WEEC2cfXMIJJAi97W3AvVTu-7gEVr3-ZHw692Aqinbw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"My First Note\",\r\n  \"content\": \"Updated content\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/notes/16",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"notes",
+						"16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "versions",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Restore version",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Specific Version",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/notes/17/versions/16",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"notes",
+						"17",
+						"versions",
+						"16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Note",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/notes/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"notes",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
