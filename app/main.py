@@ -33,4 +33,8 @@ def create_note(note: NoteCreate, db: Session = Depends(get_db)):
         "content" : new_note.content
     }
     
+@app.get("/")
+def health():
+    return {"status" : "Notes API is running"}
+    
     
