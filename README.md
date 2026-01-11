@@ -44,53 +44,53 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
 
 ### 1. Clone the repository
 ```bash
-    git clone https://github.com/Devaswin-376/Notes_API.git
-    cd Notes_API
+git clone https://github.com/Devaswin-376/Notes_API.git
+cd Notes_API
 ```
 ### 2. Create virtual environment
 ```bash
-    python -m venv venv
-    source venv/bin/activate   # Linux / macOS
-    venv\Scripts\activate      # Windows
+python -m venv venv
+source venv/bin/activate   # Linux / macOS
+venv\Scripts\activate      # Windows
 ```
 ### 3.Install dependencies
 ```bash
-    pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 ### 4.Set environment variables
 ```bash
-    Create .env file (do not commit it).
+Create .env file (do not commit it).
 ```
 ### 5.Run migrations
 ```bash
-    alembic upgrade head
+alembic upgrade head
 ```
 ### 6.Start the server
 ```bash
-    uvicorn app.main:app --reload
+uvicorn app.main:app --reload
 ```
 ### API will be available at:
-    http://127.0.0.1:8000/docs↗️
+http://127.0.0.1:8000/docs↗️
     
 ### Running Tests
 ```bash
-    pytest
+pytest
 ```
 
 ## Postman Collection
 A Postman collection with:
-    - Example requests
-    + JWT auth flow
-    * Basic tests
-    Included in repository 📁:
+- Example requests
++ JWT auth flow
+* Basic tests
+  Included in repository 📁:
 ```pgsql
 postman/Auth_API.postman_collection.json
 postman/Notes_API.postman_collection.json
 ```
 ## Deployment🚀:
 The application is deployed on Render using:
-    + Python Web Service
-    * Build command:
++ Python Web Service
+* Build command:
 ```bash
 pip install -r requirements.txt
 ```
