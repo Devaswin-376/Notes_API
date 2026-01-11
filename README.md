@@ -82,7 +82,7 @@ A Postman collection with:
 - Example requests
 + JWT auth flow
 * Basic tests  
-  Included in repository 📁:
+Included in repository 📁:
 ```pgsql
 postman/Auth_API.postman_collection.json
 postman/Notes_API.postman_collection.json
