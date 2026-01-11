@@ -40,6 +40,9 @@ SECRET_KEY=your_secret_key
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
+
+---
+
 ## Run Locally
 
 ### 1. Clone the repository
@@ -76,6 +79,7 @@ http://127.0.0.1:8000/docs↗️
 ```bash
 pytest
 ```
+---
 
 ## Postman Collection
 A Postman collection with:
@@ -87,6 +91,8 @@ Included in repository 📁:
 postman/Auth_API.postman_collection.json
 postman/Notes_API.postman_collection.json
 ```
+---
+
 ## Deployment🚀:
 The application is deployed on Render using:
 + Python Web Service
@@ -98,11 +104,15 @@ pip install -r requirements.txt
 ```bash
 uvicorn app.main:app --host 0.0.0.0 --port 10000
 ```
+---
+
 ### 👤 Author
   
 Devaswin K.S<br>
 Diploma in Computer Engineering  
 Backend Developer (FastAPI, PostgreSQL)  
+
+---
 
 ### 📄 License
 This project is created for educational and evaluation purposes.
