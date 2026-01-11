@@ -85,7 +85,7 @@ pytest
 A Postman collection with:
 - Example requests
 + JWT auth flow
-* Basic tests  
+* Basic tests
 Included in repository 📁:
 ```pgsql
 postman/Auth_API.postman_collection.json
