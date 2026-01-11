@@ -14,6 +14,7 @@ env/
 
 # Alembic
 alembic/versions/__pycache__/
+alembic/pycache/
 
 # OS files
 .DS_Store
