@@ -110,7 +110,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 10000
   
 Devaswin K.S<br>
 Diploma in Computer Engineering  
-Backend Developer (FastAPI, PostgreSQL)  
+Python Backend Developer  
 
 ---
 
