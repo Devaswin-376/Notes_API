@@ -98,11 +98,11 @@ pip install -r requirements.txt
 ```bash
 uvicorn app.main:app --host 0.0.0.0 --port 10000
 ```
-👤 Author
+###👤 Author
+  
+Devaswin K.S<br>  
+Diploma in Computer Engineering  
+Backend Developer (FastAPI, PostgreSQL)  
 
-Devaswin K.S
-Diploma in Computer Engineering
-Backend Developer (FastAPI, PostgreSQL)
-
-📄 License
+###📄 License
 This project is created for educational and evaluation purposes.
